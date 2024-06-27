@@ -1,0 +1,9 @@
+/node_modules
+/vendor
+/node_modules
+.settings
+.buildpath
+.project
+/public/uploads/*
+Homestead.yaml
+.env

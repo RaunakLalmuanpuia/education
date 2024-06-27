@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: TIST
+        psr4_prefix: TIST
+        src_path: app

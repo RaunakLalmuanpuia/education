@@ -1,0 +1,380 @@
+@import "variables";
+@import url(//fonts.googleapis.com/css?family=Roboto:500,500italic);
+body{
+  margin-top: 10px;
+}
+   
+.hidden{
+  display: none;
+}
+strong{
+  font-weight: 700;
+}
+.ui.header{
+	font-weight: 500;
+}
+.main.menu{
+	border-radius: 0;
+}
+.ui.blue.inverted.vertical.main.footer.segment{
+	margin-top: 40px;
+}
+.main.footer{
+	margin-top: 20px;
+}
+.ui.dividing.header{
+	margin-top: 1em; 
+	margin-bottom: .7em; 
+}
+.pt-20{
+  padding-top:20px;
+}
+.pt-40{
+  padding-top: 40px;
+}
+.pb-20{
+	padding-bottom:20px;
+}
+.pb-40{
+	padding-bottom: 40px;
+}
+.p-40{
+	padding: 40px;
+}
+.ptb-40{
+	padding-top:40px;
+	padding-bottom: 40px;
+}
+.top-bar{
+	padding: 1em 0em;
+}
+.teal.popup{
+	background: $teal;
+}
+.fr{
+  float:right;
+}
+
+/**
+**/
+$customGray : #777;
+$customLightGray : #aaa;
+$green : #060;
+
+.datetimepicker {
+    font-size: 0.875em;
+    display: none;
+    position: absolute;
+    padding: 4px;
+    margin-top: 1px;
+    top: 0;
+    left: 0;
+    border-radius: 0.3125em;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 999999;
+}
+
+.datetimepicker:after, .datetimepicker:before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.02);
+    width: 100%;
+    height: 5px;
+    visibility: visible;
+}
+
+.datetimepicker:before {
+    bottom: 0px;
+}
+
+.datetimepicker > div {
+    display: none;
+}
+
+.datetimepicker.days div.datetimepicker-days {
+    display: block;
+}
+
+.datetimepicker.months div.datetimepicker-months {
+    display: block;
+}
+
+.datetimepicker.years div.datetimepicker-years {
+    display: block;
+}
+
+.datetimepicker table {
+    margin: 0;
+}
+
+.datetimepicker td, .datetimepicker th {
+    text-align: center;
+    width: 2em;
+    height: 2em;
+    border-radius: 2px;
+    border: none;
+}
+
+.table-striped .datetimepicker table tr td, .table-striped .datetimepicker table tr th {
+    background-color: transparent;
+}
+
+.datetimepicker table tr td.day:hover {
+    background: $customLightGray;
+    cursor: pointer;
+}
+
+.datetimepicker table tr td.old, .datetimepicker table tr td.new {
+    color: $customGray;
+}
+
+.datetimepicker table tr td.disabled, .datetimepicker table tr td.disabled:hover {
+    background: none;
+    color: $customLightGray;
+    cursor: default;
+}
+
+.datetimepicker table tr td.today, .datetimepicker table tr td.today:hover, .datetimepicker table tr td.today.disabled, .datetimepicker table tr td.today.disabled:hover {
+    color: #333;
+    background: $customGray;
+    cursor: pointer;
+}
+
+.datetimepicker table tr td.active, .datetimepicker table tr td.active:hover, .datetimepicker table tr td.active.disabled, .datetimepicker table tr td.active.disabled:hover {
+    color: #fff;
+    background: $green;
+}
+
+.datetimepicker table tr td span {
+    display: block;
+    width: 23%;
+    height: 35px;
+    line-height: 35px;
+    float: left;
+    margin: 1%;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.datetimepicker table tr td span:hover {
+    background: $customLightGray;
+}
+
+.datetimepicker table tr td span.disabled, .datetimepicker table tr td span.disabled:hover {
+    color: $customGray;
+    background: none;
+    cursor: default;
+}
+
+.datetimepicker table tr td span.active, .datetimepicker table tr td span.active:hover, .datetimepicker table tr td span.active.disabled, .datetimepicker table tr td span.active.disabled:hover {
+    color: #FFF;
+    background: $green;
+}
+
+.datetimepicker table tr td span.old {
+    color: $customGray;
+}
+
+.datetimepicker th.switch {
+    width: 145px;
+}
+
+.datetimepicker thead tr:first-child th, .datetimepicker tfoot tr:first-child th {
+    cursor: pointer;
+}
+
+.datetimepicker thead tr:first-child th:hover, .datetimepicker tfoot tr:first-child th:hover {
+    background: $customLightGray;
+}
+
+.input-append.date .add-on i, .input-prepend.date .add-on i {
+    display: block;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+.datetimepicker-minutes thead, .datetimepicker-hours thead {
+    display: none;
+}
+
+.datetimepicker-minutes td, .datetimepicker-hours td {
+    width: 220px;
+}
+
+/*datetimepicker*/
+.icon-arrow-left,
+.icon-arrow-right{
+  display: inline-block;
+  opacity: 1;
+  margin: 0 .25rem 0 0;
+  width: 1.18em;
+  height: 1em;
+  font-family: Icons;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: inherit;
+  text-align: center;
+  speak: none;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+i.icon-arrow-left:before {
+  content: "\f060";
+}
+i.icon-arrow-right:before {
+  content: "\f061";
+}
+
+.ui.list .list>.item .header,
+.ui.list>.item .header{
+  margin-bottom: 0.2rem;
+}
+
+.teacher-image img{
+  cursor: none;
+}
+.ui.grid.teacher-personal-extra{
+  // padding-top: 1rem;
+  padding-bottom: 1rem;
+  .column{
+    // border-left: 1px solid rgba(34,36,38,.15);
+    // padding-top: 0;
+    // padding-bottom: 0;
+    &:first-child{
+      // border-left: none;
+    }
+  }
+
+}
+.ui.divider.teacher-view-divider{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.post-history-table.ui.table thead th{
+  padding-top:.4em;
+  padding-bottom:.4em;
+}
+.container a:before{
+  position: absolute;
+  top: auto;
+  bottom: 1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #4183C4;
+  content: '';
+  -webkit-transition: all 0.2s;
+  -webkit-backface-visibility: hidden;
+  transition: all 0.2s;
+  backface-visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+a{
+  color:$blue;
+  &:hover{
+    color: darken($blue, 10%);
+  }
+}
+
+.personal-details{
+  ul{
+    list-style-type: none;
+    li{
+      margin: 0 0 .4rem 0;
+      .key{
+        width: 120px;
+        display: inline-block;
+        text-align: right;
+        margin-right: 4px;
+        &.long{
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+.single.teacher{
+  .meta{
+    clear:both;
+  }
+}
+.pageload-wrap{
+  height: 100vh;
+}
+
+.loading-hidden{
+  display: none;
+}
+#teacher_cards{
+  .bottom.attached.buttons{
+    .button{
+      &:first-child{
+        border-left:1px solid #d4d4d5;
+      }
+      &:last-child{
+        border-right:1px solid #d4d4d5;
+      }
+    }
+  }
+}
+#promote-modal .new-regular{
+  display: none;
+}
+.teachers.list{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.teachers.list .teacher:hover{
+  background: #eee
+}
+
+.school.details{
+  margin-top: 0;
+  margin-bottom: 0;
+  dt {
+    float: left;
+    clear: left;
+    text-align: right;
+    width: 35%;
+    font-weight: bold;
+    padding-right: 1em;
+    margin-bottom: .25em;
+    border-bottom: 1px solid #f3f3f3;
+    padding-bottom: .25em;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  dd {
+    width: 65%;
+    display: inline-block;
+    margin-bottom: .25em;
+    padding-bottom: .25em;
+    -webkit-margin-start: 0;
+    border-bottom: 1px solid #f3f3f3;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.dist-wise-school-cats{
+  .ui{
+    &.header{
+      margin-top: 1rem
+    }
+  }
+}
+
+.site-header{
+  margin-top:10px;
+}

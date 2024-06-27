@@ -1,0 +1,25 @@
+{
+  "name": "education.v2",
+  "version": "0.0.0",
+  "authors": [
+    "Francis Lalnunmawia <franzyke@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic-ui": "~2.0.4",
+    "smalot-bootstrap-datetimepicker": "~2.3.4",
+    "handlebars": "~3.0.3",
+    "jquery-ajaxQueue": "https://github.com/gnarf/jquery-ajaxQueue.git#0.1.1"
+  },
+  "resolutions": {
+    "jquery-ajaxQueue": "0.1.1"
+  }
+}
